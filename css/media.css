@@ -1,0 +1,57 @@
+@media screen and (min-width: 768px) {
+  .container {
+    min-width: 768px;
+  }
+
+  .bars {
+    display: none;
+  }
+
+  .nav-list {
+    display: inline-flex;
+  }
+
+  .adress-list {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 12px;
+  }
+
+  /* .logo {
+    margin-right: 120px;
+  } */
+
+  .solution-list {
+    width: 736px;
+    height: 312px;
+    flex-shrink: 0;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 72px;
+  }
+
+  .solution-list-item {
+    flex-basis: calc((100% - 72px) / 2);
+  }
+}
+
+@media screen and (min-width: 1158px) {
+  .container {
+    min-width: 1158px;
+    /* padding: 0 156px; */
+  }
+
+  .adress-list {
+    display: flex;
+    align-items: flex-end;
+    flex-direction: row;
+    gap: 40px;
+  }
+}
+
+@media (min-resolution: 192dpi) {
+  .box {
+    background-image: url(../images/people-office@2x.jpg);
+  }
+}
