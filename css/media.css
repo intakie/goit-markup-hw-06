@@ -34,6 +34,65 @@
   .solution-list-item {
     flex-basis: calc((100% - 72px) / 2);
   }
+
+  .team-list {
+    display: flex;
+    flex-direction: row;
+
+    flex-wrap: wrap;
+    gap: 64px 24px;
+    /* justify-content: center;
+    align-items: center; */
+  }
+
+  .team-list-item {
+    flex-basis: calc((100% - 64px) / 2);
+    /* width: 264px; */
+  }
+
+  /* .employee {
+    width: 264px;
+  } */
+
+  .portfolio-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 72px 24px;
+  }
+
+  .portfolio-list-item {
+    flex-basis: calc((100% - 72px) / 2);
+  }
+
+  .logo-p {
+    padding-left: 48px;
+    margin: 0;
+    margin-right: 24px;
+  }
+
+  .log-soc {
+    display: flex;
+    align-items: baseline;
+  }
+
+  .social-media-container {
+    padding: 0;
+    margin: 0;
+  }
+
+  .container-form {
+    margin-left: 48px;
+    /* display: flex;
+  flex-direction: column; */
+    align-items: start;
+  }
+
+  .form {
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+  }
 }
 
 @media screen and (min-width: 1158px) {
@@ -47,6 +106,71 @@
     align-items: flex-end;
     flex-direction: row;
     gap: 40px;
+  }
+
+  .solution-icons-list {
+    display: flex;
+    gap: 24px;
+    justify-content: space-between;
+  }
+
+  .solution-list {
+    /* display: inline-flex; */
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 24px;
+  }
+
+  /* .solution-list-item {
+    width: calc((100% - 72px) / 4);
+  } */
+
+  .solution-list-item {
+    flex-basis: calc((100% - 72px) / 4);
+  }
+
+  .sol-title {
+    align-self: flex-start;
+
+    text-align: start;
+  }
+
+  .sol-text {
+    align-self: flex-start;
+  }
+
+  /* .sol-flex-list {
+    display: flex;
+    width: 264px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  } */
+
+  .team-list {
+    display: flex;
+    flex-direction: row;
+
+    flex-wrap: wrap;
+    gap: 24px;
+    /* justify-content: center;
+    align-items: center; */
+  }
+
+  .team-list-item {
+    /* width: 264px; */
+    flex-basis: calc((100% - 72px) / 4);
+  }
+
+  .portfolio-list {
+    /* display: flex;
+    flex-direction: row;
+    flex-wrap: wrap; */
+    gap: 48px 24px;
+  }
+
+  .portfolio-list-item {
+    flex-basis: calc((100% - 48px) / 3);
   }
 }
 
