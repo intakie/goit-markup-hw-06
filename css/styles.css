@@ -13,18 +13,26 @@ ul {
   padding-left: 0;
 }
 
+button {
+  cursor: pointer;
+}
+
+svg,
 img {
   display: block;
+  max-width: 100%;
+  height: auto;
+  /* margin: 0 auto; */
 }
 
 .container {
-  max-width: 320px;
+  min-width: 320px;
   /* width: 1158px; */
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
-  width: 100%;
+  /* width: 100%; */
 }
 
 .div {
@@ -49,6 +57,13 @@ body {
   background: var(--WHITE, #fff);
   box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* margin-right: auto; */
 }
 
 .logo {
@@ -90,8 +105,10 @@ body {
 }
 
 .nav {
-  padding-top: 24px;
-  padding-bottom: 24px;
+  /* padding-top: 24px;
+  padding-bottom: 24px; */
+  padding-top: 18px;
+  padding-bottom: 18px;
   display: flex;
   align-items: center;
 }
@@ -169,7 +186,7 @@ body {
 .adress-list {
   display: flex;
   align-items: flex-end;
-  gap: 40px;
+  gap: 12px;
   display: none;
 }
 
@@ -183,8 +200,8 @@ ul {
 
 .adress-list-item-link {
   color: #434455;
-  padding-top: 24px;
-  padding-bottom: 24px;
+  /* padding-top: 18px;
+  padding-bottom: 18px; */
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -202,12 +219,14 @@ ul {
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
-    url(../images/people-office.jpg);
-  max-width: 1440px;
+    url(../images/mobile/dark-bg_mob.png);
+  min-width: 320px;
+  /* max-width: 1440px; */
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  padding: 188px 0;
+  padding: 72px 0;
+  /* padding: 188px 0; */
   margin: 0 auto;
 }
 
@@ -215,17 +234,21 @@ ul {
   color: var(--WHITE, #fff);
   /* width: 496px; */
   font-family: Roboto;
-  font-size: 56px;
+  /* font-size: 56px; */
+  font-size: 36px;
   font-weight: 700;
   line-height: 1.07;
-  letter-spacing: 1.12px;
+  letter-spacing: 0.72px;
   text-align: center;
   /* padding-top: 188px;
   padding-right: 472px;
   padding-left: 472px; */
   margin: 0 auto;
-  margin-bottom: 48px;
-  max-width: 496px;
+  margin-bottom: 72px;
+  max-width: 288px;
+
+  font-style: normal;
+  text-transform: capitalize;
 }
 
 /* button {
@@ -261,7 +284,8 @@ ul {
 }
 
 .solution {
-  padding: 120px 0;
+  /* padding: 120px 0; */
+  padding: 96px 0;
 }
 
 .visually-hidden {
@@ -291,10 +315,11 @@ ul {
   border-radius: 4px;
   border: 1px solid var(--LIGHT-SLATE, #8e8f99);
   background: var(--CLOUD, #f4f4fd);
-  margin-bottom: 8px;
-  display: flex;
+  /* margin-bottom: 8px; */
+  /* display: flex; */
   align-items: center;
   justify-content: center;
+  display: none;
 }
 
 .sol-ic {
@@ -332,8 +357,16 @@ ul {
   flex-basis: 100%;
 }
 
+.sol-div {
+  display: flex;
+  width: 264px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+}
+
 .sol-title {
-  margin-bottom: 8px;
+  /* margin-bottom: 8px; */
   align-self: stretch;
   color: var(--NAVY-BLUE, #2e2f42);
   text-align: center;
@@ -351,6 +384,8 @@ ul {
 .sol-text {
   align-self: stretch;
   color: var(--SLATE, #434455);
+  font-size: 16px;
+  font-weight: 500;
 }
 
 h3 {
@@ -364,7 +399,7 @@ h3 {
 
 .team {
   background: var(--CLOUD, #f4f4fd);
-  padding: 120px 0;
+  padding: 96px 0;
 }
 
 .team-list {
@@ -514,7 +549,7 @@ h3 {
 }
 
 .portfolio {
-  padding: 120px 0 120px 0;
+  padding: 96px 0 96px 0;
 }
 
 .title-four {
@@ -624,6 +659,13 @@ h3 {
   /* padding-top: 17px; */
   width: 264px;
   /* padding-bottom: 100px; */
+
+  color: var(--CLOUD, #f4f4fd);
+
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
 }
 
 .footer {
@@ -644,9 +686,25 @@ h3 {
   /* justify-content: center; */
 }
 
-.logo-p {
-  margin-right: 120px;
+.logo-p,
+.social-media-container,
+.container-form {
+  flex-basis: 100%;
 }
+
+.logo-p {
+  margin-bottom: 72px;
+}
+
+/* .s-logo {
+  align-self: center;
+  align-items: center;
+  justify-content: center;
+} */
+
+/* .logo-p {
+  margin-right: 120px;
+} */
 
 .studio-logo {
   color: var(--CLOUD, #f4f4fd);
@@ -1133,4 +1191,10 @@ h3 {
   width: 24px;
   height: 24px;
   border: none;
+  padding: 0;
+}
+
+.bars {
+  width: 24px;
+  height: 24px;
 }
